@@ -11,7 +11,6 @@ import {COLOURS, Items} from './database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Drawer from '../navigation/Drawer';
 
 const Home = ({navigation}) => {
   const [products, setProducts] = useState([]);
@@ -42,10 +41,6 @@ const Home = ({navigation}) => {
     setProducts(productList);
     setAccessory(accessoryList);
   };
-
-  function show({draw}) {
-    <Drawer />;
-  }
 
   //create an product reusable card
 
@@ -158,7 +153,7 @@ const Home = ({navigation}) => {
             </View>
           )
         ) : null}
-        <Text>&#8362; {data.productPrice}</Text>
+        <Text>&#8377; {data.productPrice}</Text>
       </TouchableOpacity>
     );
   };
@@ -181,7 +176,7 @@ const Home = ({navigation}) => {
           }}>
           <TouchableOpacity>
             <Entypo
-              name="menu"
+              name="shopping-bag"
               style={{
                 fontSize: 18,
                 color: COLOURS.backgroundMedium,
@@ -232,7 +227,7 @@ const Home = ({navigation}) => {
             {'\n'}This shop offers both products and services
           </Text>
         </View>
-        {/* <View
+        <View
           style={{
             padding: 16,
           }}>
@@ -286,7 +281,7 @@ const Home = ({navigation}) => {
               return <ProductCard data={data} key={data.id} />;
             })}
           </View>
-        </View> */}
+        </View>
 
         <View
           style={{

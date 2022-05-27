@@ -11,11 +11,11 @@ import Home from './components/screens/Home';
 import Login from './components/screens/Login';
 const App = () => {
   return (
-    <Login />
-    // <NavigationContainer>
-    //   <Stack />
-    //   {/* <Drawer /> */}
-    // </NavigationContainer>
+    // <Login />
+    <NavigationContainer>
+      {/* <Stack /> */}
+      <Drawer />
+    </NavigationContainer>
   );
 };
 export default App;
