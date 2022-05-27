@@ -11,6 +11,7 @@ import {COLOURS, Items} from './database/Database';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Drawer from '../navigation/Drawer';
 
 const Home = ({navigation}) => {
   const [products, setProducts] = useState([]);
@@ -41,6 +42,10 @@ const Home = ({navigation}) => {
     setProducts(productList);
     setAccessory(accessoryList);
   };
+
+  function show({draw}) {
+    <Drawer />;
+  }
 
   //create an product reusable card
 
@@ -200,14 +205,6 @@ const Home = ({navigation}) => {
             />
           </TouchableOpacity>
         </View>
-        {/* <View
-          style={{
-            alignContent: 'center',
-            color: COLOURS.black,
-            justifyContent: 'center',
-          }}>
-          <Text>Fresh</Text>
-        </View> */}
         <View
           style={{
             marginBottom: 10,
@@ -221,7 +218,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-            Fresh Shop &amp; Service
+            Hi-Fi Shop &amp; Service
           </Text>
           <Text
             style={{
@@ -231,11 +228,11 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               lineHeight: 24,
             }}>
-            Fresh Homemade
-            {'\n'}Offers both Homemade food and delivery
+            Audio shop on Rustaveli Ave 57.
+            {'\n'}This shop offers both products and services
           </Text>
         </View>
-        <View
+        {/* <View
           style={{
             padding: 16,
           }}>
@@ -289,7 +286,7 @@ const Home = ({navigation}) => {
               return <ProductCard data={data} key={data.id} />;
             })}
           </View>
-        </View>
+        </View> */}
 
         <View
           style={{
@@ -298,7 +295,7 @@ const Home = ({navigation}) => {
           <View
             style={{
               flexDirection: 'row',
-              // alignItems: 'center',
+              alignItems: 'center',
               justifyContent: 'space-between',
             }}>
             <View
