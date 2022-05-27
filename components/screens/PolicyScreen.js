@@ -9,7 +9,7 @@ function Contact() {
         alignItems: 'center',
         flex: 1,
       }}>
-      <Text style={{color: 'black'}}>The Is Contact Us Screen !</Text>
+      <Text style={{color: 'black'}}>The Is Policy Screen !</Text>
     </View>
   );
 }
