@@ -174,7 +174,7 @@ const Home = ({navigation}) => {
             justifyContent: 'space-between',
             padding: 16,
           }}>
-          <TouchableOpacity>
+          {/* <TouchableOpacity>
             <Entypo
               name="shopping-bag"
               style={{
@@ -185,13 +185,13 @@ const Home = ({navigation}) => {
                 backgroundColor: COLOURS.backgroundLight,
               }}
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <TouchableOpacity onPress={() => navigation.navigate('MyCart')}>
             <MaterialCommunityIcons
               name="cart"
               style={{
                 fontSize: 18,
-                color: COLOURS.backgroundMedium,
+                color: COLOURS.backgroundDark,
                 padding: 12,
                 borderRadius: 10,
                 borderWidth: 1,
@@ -200,10 +200,12 @@ const Home = ({navigation}) => {
             />
           </TouchableOpacity>
         </View>
-        <View
+        {/* <View
           style={{
             marginBottom: 10,
             padding: 16,
+            justifyContent: 'center',
+            alignItems: 'center',
           }}>
           <Text
             style={{
@@ -213,7 +215,7 @@ const Home = ({navigation}) => {
               letterSpacing: 1,
               marginBottom: 10,
             }}>
-            Hi-Fi Shop &amp; Service
+            Pharmacy
           </Text>
           <Text
             style={{
@@ -226,6 +228,61 @@ const Home = ({navigation}) => {
             Audio shop on Rustaveli Ave 57.
             {'\n'}This shop offers both products and services
           </Text>
+        </View> */}
+        <View
+          style={{
+            padding: 16,
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                  color: COLOURS.black,
+                  fontWeight: '500',
+                  letterSpacing: 1,
+                }}>
+                Vitamins
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  color: COLOURS.black,
+                  fontWeight: '400',
+                  opacity: 0.5,
+                  marginLeft: 10,
+                }}>
+                21
+              </Text>
+            </View>
+            <Text
+              style={{
+                fontSize: 14,
+                color: COLOURS.blue,
+                fontWeight: '400',
+              }}>
+              SeeAll
+            </Text>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              justifyContent: 'space-around',
+            }}>
+            {products.map(data => {
+              return <ProductCard data={data} key={data.id} />;
+            })}
+          </View>
         </View>
         <View
           style={{
@@ -249,7 +306,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Products
+                Antibiotics
               </Text>
               <Text
                 style={{
@@ -259,7 +316,7 @@ const Home = ({navigation}) => {
                   opacity: 0.5,
                   marginLeft: 10,
                 }}>
-                41
+                13
               </Text>
             </View>
             <Text
@@ -305,7 +362,7 @@ const Home = ({navigation}) => {
                   fontWeight: '500',
                   letterSpacing: 1,
                 }}>
-                Accessories
+                Care Products
               </Text>
               <Text
                 style={{

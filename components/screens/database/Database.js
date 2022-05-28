@@ -19,12 +19,12 @@ export const Items = [
       'Up to 20 hours battery life | Super powerful Bass | 40mm dynamic driver | Pressure less ear muffs | Bluetooth 5.0 | Voice control',
     isOff: true,
     offPercentage: 10,
-    productImage: require('../database/images/products/Mi1.png'),
+    productImage: require('../database/images/products/119.jpg'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/products/Mi1.png'),
-      require('../database/images/products/Mi2.png'),
-      require('../database/images/products/Mi3.png'),
+      require('../database/images/products/119.jpg'),
+      require('../database/images/products/119.jpg'),
+      require('../database/images/products/119.jpg'),
     ],
   },
   {
@@ -35,12 +35,12 @@ export const Items = [
     description:
       'boAt Rockerz 450 M is an on-ear wireless headset that has been ergonomically designed to meet the needs of music lovers.',
     isOff: false,
-    productImage: require('../database/images/products/boat1.png'),
+    productImage: require('../database/images/products/119.jpg'),
     isAvailable: true,
     productImageList: [
-      require('../database/images/products/boat1.png'),
-      require('../database/images/products/boat2.png'),
-      require('../database/images/products/boat3.png'),
+      require('../database/images/products/119.jpg'),
+      require('../database/images/products/119.jpg'),
+      require('../database/images/products/119.jpg'),
     ],
   },
   {

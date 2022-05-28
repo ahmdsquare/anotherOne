@@ -7,6 +7,7 @@ import MyCart from '../screens/Cart';
 import ProductInfo from '../screens/ProductInfo';
 import Home from '../screens/Home';
 import Policy from '../screens/PolicyScreen';
+
 const Stack = createNativeStackNavigator();
 const ContactUs = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -29,11 +30,21 @@ const HomePolicy = ({navigation}) => (
   </Stack.Navigator>
 );
 
+const HomeContact = ({navigation}) => (
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}>
+    <Stack.Screen name="Home" component={Contact} />
+  </Stack.Navigator>
+);
+
 function DScreen({navigation}) {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="ContactUs" component={HomeStack} />
+      <Drawer.Screen name="Pharmacy" component={HomeStack} />
       <Drawer.Screen name="Policy" component={HomePolicy} />
+      <Drawer.Screen name="Contact" component={HomeContact} />
     </Drawer.Navigator>
   );
 }

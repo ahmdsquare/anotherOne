@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-function Contact() {
+function Policy() {
   return (
     <View
       style={{
@@ -14,4 +14,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Policy;
